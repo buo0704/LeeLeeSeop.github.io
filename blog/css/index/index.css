@@ -17,6 +17,6 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 50vh;
     flex-direction: column; /* 세로로 정렬하려면 필요 */    
 }
