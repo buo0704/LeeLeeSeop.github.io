@@ -12,3 +12,11 @@ html, body {
     height: 100vh;
     flex-direction: column; /* 세로로 정렬하려면 필요 */
 }
+
+.my-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* 세로로 정렬하려면 필요 */    
+}
