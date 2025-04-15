@@ -10,13 +10,11 @@ html, body {
     justify-content: center;
     align-items: center;
     height: 70vh;
-    flex-direction: column; /* 세로로 정렬하려면 필요 */
 }
 
 .my-about{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-    flex-direction: column; /* 세로로 정렬하려면 필요 */    
+    height: 50vh;   
 }
