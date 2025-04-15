@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.groundred{
+  text-align: center;
+}
