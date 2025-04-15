@@ -9,13 +9,16 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
 }
 
 .my-about{
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: flex-start;
+    top: 50px;
+    
 }
 
 .profile{
