@@ -9,6 +9,5 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* 뷰포트 전체 높이 */
     flex-direction: column; /* 세로로 정렬하려면 필요 */
 }
