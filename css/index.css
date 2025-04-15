@@ -31,5 +31,10 @@ html, body {
 
 .tag{
     position: relative;
-    left: 20px;
+    left: 50px;
+}
+
+.Skill{
+    position: relative;
+    left: 150px; 
 }
