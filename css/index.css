@@ -37,4 +37,5 @@ html, body {
 .Skill{
     position: relative;
     left: 250px; 
+    top: -15px;
 }
