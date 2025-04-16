@@ -12,30 +12,30 @@ html, body {
     height: 100vh;
 }
 
-.my-about{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: flex-start;
-     height: 100vh;
-    right: 500px;
-    
+.my-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  gap: 60px;
 }
 
-.profile{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border: 1px solid #ccc;  
+.aboutme,
+.tag,
+.skill {
+  flex: 1;
 }
 
-.tag{
-    position: relative;
-    left: 100px;
+.aboutme p,
+.tag p,
+.skill p {
+  margin: 8px 0;
+  font-size: 16px;
 }
 
-.Skill{
-    position: relative;
-    left: 250px; 
-    top: -15px;
+.skill h2 {
+  margin-bottom: 16px;
+  font-size: 20px;
 }
