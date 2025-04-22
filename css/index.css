@@ -5,37 +5,64 @@ html, body {
     padding: 0;
 }
 
+
 .groundred{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
-.my-about{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: flex-start;
-     height: 100vh;
-    right: 500px;
-    
+
+.groundred img{
+    display:block;
+    width: 100%;
+    height: auto;
 }
 
-.profile{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border: 1px solid #ccc;  
+.aboutme {
+    text-align: center;         /* 전체 내용을 중앙 정렬 */
+    position: relative;         /* h2의 absolute 위치 기준이 됨 */
+}
+
+.aboutme h2 {
+    font-family: "Kanit", sans-serif;  /* 웹 폰트 적용 */
+    font-size: 50px;                   /* 큰 제목 크기 */
+    margin-left: 0;                    /* 왼쪽 여백 제거 */
+    text-align: left;                  /* 텍스트는 왼쪽 정렬 */
+    margin-left: 450px;                           /* 왼쪽으로 고정 */
+    margin-bottom: -10px;
+}
+
+.aboutme p.name,
+.aboutme p.age {
+    text-align: left;         /* 글자 내부 왼쪽 정렬 */
+    margin-left: 650px;       /* 전체 박스를 오른쪽으로 이동 */
+    position: relative;         
+    bottom: -20px;
+}
+
+.aboutme p.ability{
+    text-align: left;         /* 글자 내부 왼쪽 정렬 */
+    margin-left: 880px;       /* 전체 박스를 오른쪽으로 이동 */
+    position: relative;         
+    bottom: 57px;
+}
+
+.aboutme p.Career{
+    text-align: left;         /* 글자 내부 왼쪽 정렬 */
+    margin-left: 1150px;       /* 전체 박스를 오른쪽으로 이동 */
+    position: relative;         /* 불필요한 relative 제거 (기본값) */
+    bottom: 120px;
 }
 
 .tag{
+    text-align: right;
+    margin-right: 650px; 
     position: relative;
-    left: 100px;
+    bottom: 218px;
 }
 
 .Skill{
-    position: relative;
-    left: 250px; 
-    top: -12px;
+    text-align: center;         /* 전체 내용을 중앙 정렬 */
+    position: relative;         /* h2의 absolute 위치 기준이 됨 */
 }
