@@ -65,9 +65,16 @@ html, body {
     font-family: "Kanit", sans-serif; 
     text-align: center; 
     font-size: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .Skill img {
-    margin-right: 20px;
+    margin-right: 25px;
+}
+
+.froject{
+    font-family: "Kanit", sans-serif; 
+    text-align: center; 
+    font-size: 25px;
+    margin-top: 150px;
 }
