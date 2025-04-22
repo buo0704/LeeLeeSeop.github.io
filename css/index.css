@@ -50,7 +50,7 @@ html, body {
 
 .aboutme p.Career{
     text-align: left;         /* 글자 내부 왼쪽 정렬 */
-    margin-left: 1000px;       /* 전체 박스를 오른쪽으로 이동 */
+    margin-left: 1050px;       /* 전체 박스를 오른쪽으로 이동 */
     position: relative;         /* 불필요한 relative 제거 (기본값) */
     bottom: 120px;
 }
