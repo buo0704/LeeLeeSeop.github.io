@@ -5,80 +5,110 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 <title>Web Publisher</title>
 <link rel="stylesheet" href="css/index.css">	
 </head>
 <body>
-	<header class="navbar">
-		<div class="card" onclick="window.open('https://github.com/buo0704/LeeLeeSeop.github.io.git', '_blank')">	
-			<img src="img/free-icon-github-logo-25231.png" alt="git">
-		  </div>
-		<nav class="navbar-center">
-			<ul>
-				<li><a href="#profile">프로필</a></li>
-				<li><a href="#profile">프로젝트</a></li>
-				<li><a href="#profile">디자인</a></li>
-			</ul>
-		</nav>
-	</header>
-
-	<!-- header 시작 -->
-	<div class="header">
-		<div class="groundred">
-			<img src="img/첫 배경화면(복사본).png">
-		</div>
-	</div> 
-	<!-- header 끝 -->
-
-	<!-- 내 자기소개-->
-	<div class="my-about">
-		<div class="aboutme" id="profile">
-			<h2>About</h2>
-			<hr>
-			<div class="about-row">
-			  <div>
-				<p><strong>이름:</strong> <span>이이섭</span></p>
-				<p><strong>나이:</strong> <span>1999.07.24</span></p>
+	<div class="container">
+		<header>
+			<nav class="navbar-center">
+				<ul>
+					<li><a href="#profile">프로필</a></li>
+					<li><a href="#froject">프로젝트</a></li>
+					<li><a href="#Design">디자인</a></li>
+				</ul>
+				<div class="card" onclick="window.open('https://github.com/buo0704/LeeLeeSeop.github.io.git', '_blank')">	
+					<img src="img/free-icon-github-logo-25231.png" alt="git">
 				</div>
-			  <div>
-				<p><strong>학력</strong></p>
-				<p>부용고등학교</p>
-			  </div>
-			  <div>
-				<p><strong>경력</strong></p>
-				<p>동아기업(2022.11 ~ 2024.02)<br><p>그래픽디자인 업무</p></p>
-			  </div>
-			  <div>
-				<p><strong>Tag</strong></p>
-				<p>#웹 퍼블리셔<br>#웹 디자이너</p>
-			  </div>
-			</div><!--about-row end-->
-		  </div><!--aboutme end-->
+			</nav>
+			<div class="groundred">
+				<img src="img/첫 배경화면(복사본).png">
+			</div>
+		</header>
 
-		<div class="Skill">
-			<h1>SKILL</h1>
-            <img src="img/HTML5(1).png">
-			
-            <img src="img/CSS3(1).png">
-		
-            <img src="img/자바스크립트(1).png">
-			
-            <img src="img/제이쿼리.png">
-			
-            <img src="img/일러스트(1).png">
-			
-            <img src="img\포토샵(1).png">
-		</div><!--skill-->
-	</div><!--my-about end-->
-	<!-- 내 자기소개의 끝 -->
+		<main class="content">
+			<section class="my-profile">
+				<div class="profile" id="profile">
+					<h1>프로필</h1>
+					<div class="profile-row">
+						<div>
+							<p><b>이름:</b> <span>이이섭</span></p>
+							<p><b>나이:</b> <span>1999.07.24</span></p>
+							</div>
+						<div>
+							<p><strong>학력</strong></p>
+							<p>부용고등학교</p>
+						</div>
+						<div>
+							<p><strong>경력</strong></p>
+							<p>동아기업(2022.11 ~ 2024.02)<br>그래픽디자인 업무</p>
+						</div>
+						<div>
+							<p><strong>Tag</strong></p>
+							<p>#웹 퍼블리셔<br>#웹 디자이너</p>
+						</div>
+					</div><!--about-row end-->
+				</div><!--aboutme end-->
+			</section><!--my-about end-->
 
-	<div class="froject">
-		<h1>Froject</h1>
-	</div>
+			<section class="my-Skill">
+				<div class="Skill">
+					<h1>스킬</h1>
+					<ul class="skill-img">
+						<li>
+							<img src="img/HTML5(1).png">
+							<p>HTML5</p>
+						</li>
+						
+						<li>
+							<img src="img/CSS3(1).png">
+							<p>CSS3</p>
+						</li>
+					
+						<li>
+							<img src="img/자바스크립트(1).png">
+							<p>JavaScript</p>
+						</li>
+						
+						<li>
+							<img src="img/제이쿼리.png">
+							<p>jQuery</p>
+						</li>
+						
+						<li>
+							<img src="img/일러스트(1).png">
+							<p>Adobe Illustrator</p>
+						</li>
+						
+						<li>
+							<img src="img\포토샵(1).png">
+							<p>Adobe Photoshop</p>
+						</li>
+					</ul>
+				</div>
+			</section><!--my-about end-->
 
-	<div class="Design">
-		<h1>Design</h1>
+				<section class="froject" id="froject">
+					<h1>프로젝트</h1>
+
+				</section>
+			
+				<section class="Design" id="Design">
+					<h1>디자인</h1>
+					<ul class="Design-list">
+						<li>
+							<a href="이이섭 시각디자인 포트폴리오.pdf" target="_blank">
+								<img src="img\포트폴리오 첫 화면.jpg" alt="interYard 프로젝트">
+								<div style="color:black;">
+									<h3>디자인 포트폴리오</h3>
+									<p>종합 디자인</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</section>
+		</main>
 	</div>
 </body>
 </html>
