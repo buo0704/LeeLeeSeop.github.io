@@ -145,6 +145,7 @@ a{
     margin: 0 auto -15px auto; 
 }
 
+.froject-list,
 .Design-list{
     list-style: none; 
     align-items: center; 
@@ -153,6 +154,7 @@ a{
     height: 100%;
 }
 
+.froject-list img,
 .Design-list img{
     width: 350px;
     margin-top: -20%;
@@ -163,10 +165,4 @@ a{
     color: black;
     margin-top: -25%;
     text-align: center;
-}
-
-.froject img{
-    width: 350px;
-    margin-top: -20%;
-    height: auto;
 }
