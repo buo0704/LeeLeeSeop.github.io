@@ -108,9 +108,9 @@ a{
     font-size: 18px;  
   }
 
-.Skill,
-.froject,
-.Design{
+.skill,
+.project,
+.design{
     font-family: "Kanit", sans-serif; 
     text-align: center; 
     font-size: 25px;
@@ -146,7 +146,7 @@ a{
 }
 
 .project-list,
-.Design-list{
+.design-list{
     list-style: none; 
     align-items: center; 
     justify-content: center;
@@ -155,20 +155,25 @@ a{
 }
 
 .project-list img,
-.Design-list img{
+.design-list img{
     width: 350px;
     margin-top: -20%;
     height: auto;
-}
-
-.Design-name{
-    color: black;
-    margin-top: -25%;
-    text-align: center;
 }
 
 .project-name{
     color: black;
     margin-top: 10%;
     text-align: center;
+}
+
+.design-name{
+    color: black;
+    margin-top: -25%;
+    text-align: center;
+}
+
+footer {
+  background-color: red;
+  height: 100px;
 }
