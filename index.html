@@ -7,6 +7,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/index.css">	
+	
 	<title>Web Publisher</title>
 </head>
 <body>
@@ -16,9 +17,9 @@
 				<ul>
 					<li><a href="#profile">프로필</a></li>
 					
-					<li><a href="#project">프로젝트</a></li>
+					<li><a href="#froject">프로젝트</a></li>
 	
-					<li><a href="#design">디자인</a></li>
+					<li><a href="#Design">디자인</a></li>
 				</ul>
 				<div class="card" onclick="window.open('https://github.com/buo0704/LeeLeeSeop.github.io.git', '_blank')">	
 					<img src="img/github.png" alt="github-icon">
@@ -63,8 +64,8 @@
 						<div>
 							<p><strong>Tag</strong></p>
 							<p>
-								# 웹 퍼블리셔<br>
-								# 웹 디자이너<br>
+								#웹 퍼블리셔<br>
+								#웹 디자이너
 							</p>
 						</div>
 					</div>
@@ -135,9 +136,26 @@
 							</div>
 						</a>
 					</li>
+
+					<li>
+						<img src="img/National Veterans Day.png" alt="호국보훈의 달 디자인" data-description="호국보훈의 달을 맞이하여 호국영령을 기억하고자 만들었습니다.">
+							<div class="design-name">
+								<h3>호국보훈의 달 디자인</h3>
+							</div>						
+					</li>
 				</ul>
+
+				<!--모달 창-->
+				<div class="modal" id="modal">
+					<div class="modal-box">
+						<span class="close" id="close">&times;</span>
+						<img id="modal-img" src="" alt="">
+						<div class="description" id="modal-desc"></div>
+					</div>
+				</div>
 			</section>
 		</main>
 	</div>
+	<script src="index.js"></script>
 </body>
 </html>
