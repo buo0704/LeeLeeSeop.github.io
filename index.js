@@ -1,31 +1,29 @@
-const modal = document.getElementById('modal');
-const modalImg = document.getElementById('modal-img'); 
-const modalDesc = document.getElementById('modal-desc');
-const closeBtn = document.getElementById('close');
+$(function(){
+    // 이미지 클릭
+    $('.design-list img').on('click', function(){
+        const title = $(this).data('title');
+        const images = $(this).data('images').split(',');
 
-// 이미지 클릭하면 모달 열기
-document.querySelectorAll('ul li img').forEach(img => {
-    img.addEventListener('click', (event) => {
-        // data-description이 없는 이미지에는 반응하지 않음
-        const description = img.getAttribute('data-description');
-        if (!description) return;
+        $('#modalTitle').text(title);
+        $('#modalBody').empty();
 
-        // 기본 동작(예: 링크 클릭) 방지
-        event.preventDefault();
+        images.forEach(src => {
+        $('#modalBody').append(`<img src="${src.trim()}" alt="${title}">`);
+        });
 
-        modal.style.display = 'flex';
-        modalImg.src = img.src;
-        modalDesc.textContent = description;
-        modalImg.classList.remove('zoomed'); 
+        $('#designModal').addClass('open');
+        $('body').addClass('modal-open');
     });
-});
 
-// 모달 닫기
-closeBtn.addEventListener('click', () => {
-    modal.style.display = 'none';
-});
-
-// 모달 이미지 클릭 시 확대/축소
-modalImg.addEventListener('click', () => {
-    modalImg.classList.toggle('zoomed'); 
+    // 닫기
+    $('#designModal .close, #designModal').on('click', function(e){
+        if (e.target.id === 'designModal' || e.target.className === 'close') {
+        $('#designModal').removeClass('open');
+        $('body').removeClass('modal-open');
+        }
+    });
+  
+    $(document).on('click', '#modalBody img', function(){
+        $(this).toggleClass('zoomed');
+    });
 });
