@@ -7,7 +7,6 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/index.css">	
-	
 	<title>Web Publisher</title>
 </head>
 <body>
@@ -17,7 +16,7 @@
 				<ul>
 					<li><a href="#profile">프로필</a></li>
 					
-					<li><a href="#froject">프로젝트</a></li>
+					<li><a href="#project">프로젝트</a></li>
 	
 					<li><a href="#Design">디자인</a></li>
 				</ul>
@@ -138,24 +137,34 @@
 					</li>
 
 					<li>
-						<img src="img/National Veterans Day.png" alt="호국보훈의 달 디자인" data-description="호국보훈의 달을 맞이하여 호국영령을 기억하고자 만들었습니다.">
-							<div class="design-name">
-								<h3>호국보훈의 달 디자인</h3>
-							</div>						
+						<img src="img/National Veterans Day.png" alt="호국보훈의 달" 
+							data-title="호국보훈의 달 디자인"
+							data-images="img/National Veterans Day.png">
+						<div class="design-name"><h3>호국보훈의 달 디자인</h3></div>
 					</li>
-				</ul>
 
-				<!--모달 창-->
-				<div class="modal" id="modal">
-					<div class="modal-box">
-						<span class="close" id="close">&times;</span>
-						<img id="modal-img" src="" alt="">
-						<div class="description" id="modal-desc"></div>
+					<li>
+						<img src="img/DoDamLogo.png" alt="도담" 
+							data-title="도담"
+							data-images=
+							"img/[BI] DoDamLogo.png,
+							img/front design.png, 
+							img/Nutritional information diagram on the left.png">
+						<div class="design-name"><h3>도담</h3></div>
+					</li>
+
+					<!-- 모달 -->
+					<div id="designModal" class="modal">
+						<div class="modal-box">
+							<span class="close">&times;</span>
+							<h3 id="modalTitle"></h3>
+							<div class="modal-body" id="modalBody"></div>
+						</div>
 					</div>
-				</div>
 			</section>
 		</main>
 	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="index.js"></script>
 </body>
 </html>
