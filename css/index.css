@@ -1,332 +1,287 @@
 @charset "UTF-8";
 
-/* 모바일용 CSS */
-@media (max-width: 767px) {
-
-  h1 {
-    font-size: 28px;
-    top: -40px;
-    left: 15px;
-  }
-
-  .profile, .skill, .project, .design {
-    width: 95%;
-    margin-top: 100px;
-    border-radius: 30px;
-  }
-
-  .profile-row {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .skill-img {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .card img {
-    left: 90%;
-    width: 30px;
-    height: 30px;
-  }
-
-}
-
-
  /* 데스크탑 css */
 @media (min-width: 1025px) {
 
-        html, body {
-            margin: 0;
-            padding: 0;
-        }
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
-        h1 {
-            font-family: "Noto Sans KR", sans-serif;
-            font-weight: 700;
-            font-style: normal;
-            text-align: left; 
-            position: relative;
-            font-size: 50px;                           
-            top: -80px;  
-            left: 30px;
-            margin: 0;
-        }
+h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: left; 
+  position: relative;
+  font-size: 50px;                           
+  top: -80px;  
+  left: 30px;
+  margin: 0;
+}
 
-        a{
-            text-decoration: none;
-        }
+a{
+  text-decoration: none;
+}
 
-        .card img{
-            position: absolute; 
-            cursor: pointer;
-            top: 50%;    
-            left: 80%;   
-            transform: translate(-50%, -50%);
-            width: 40px;
-            height: 40px;  
-        }
+.card img{
+  position: absolute; 
+  cursor: pointer;
+  top: 50%;    
+  left: 80%;   
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;  
+}
 
-        .navbar-center {
-            position: fixed;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            top: 0;
-            width: 100%;
-            z-index: 999;
-            padding: 12px 0;
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
+.navbar-center {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 12px 0;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
-        .navbar-center ul{
-            list-style: none;
-            display: flex;
-            gap: 40px;
-            justify-content: center;
-            padding: 0;
-        }
+.navbar-center ul{
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 0;
+}
 
-        .navbar-center li a {
-            text-decoration: none;
-            color: #333;
-            font-size: 22px;
-        }
+.navbar-center li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 22px;
+}
 
-        .groundred{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+.groundred{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-        .groundred img{
-            display:block;
-            width: 100%;
-            height: auto;
-            box-shadow: 2px 2px 10px 1px #5df36c; 
-        }
+.groundred img{
+  display:block;
+  width: 100%;
+  height: auto;
+  box-shadow: 2px 2px 10px 1px #5df36c; 
+}
 
-        .profile {
-            text-align: center;     
-            position: relative;    
-            width: 85%;
-            height: auto;
-            background-color: #ffffff;
-            margin: 0 auto;      
-            margin-top: 200px; 
-            box-shadow: 2px 2px 10px 1px #acbebe; 
-            border-radius: 60px;  
-            min-height: 300px;   
-        }
+.profile {
+  text-align: center;     
+  position: relative;    
+  width: 85%;
+  height: auto;
+  background-color: #ffffff;
+  margin: 0 auto;      
+  margin-top: 200px; 
+  box-shadow: 2px 2px 10px 1px #acbebe; 
+  border-radius: 60px;  
+  min-height: 300px;   
+}
 
-        .profile-row {
-            display: flex;
-            justify-content: center; 
-            gap: 80px;                
-            margin-top: 10px;
-            flex-wrap: wrap;  
-        }
-        
-        .profile-row > div {
-            min-width: 150px;         
-            text-align: left;         
-            font-family: "Kanit", sans-serif;
-        }
+.profile-row {
+  display: flex;
+  justify-content: center; 
+  gap: 80px;                
+  margin-top: 10px;
+  flex-wrap: wrap;  
+}
 
-        .profile-row strong{
-            font-size: 30px;
-        }
+.profile-row > div {
+  min-width: 150px;         
+  text-align: left;         
+  font-family: "Kanit", sans-serif;
+}
 
-        .profile-row p {
-            margin-bottom: 10px;
-            margin-top: 5px;
-            font-size: 18px;  
-        }
+.profile-row strong{
+  font-size: 30px;
+}
 
-        .skill,
-        .project,
-        .design{
-            font-family: "Kanit", sans-serif; 
-            text-align: center; 
-            font-size: 25px;
-            margin: 0 auto;
-            margin-top: 200px;
-            width: 85%;
-            height: auto;  
-            border-radius: 60px; 
-            background-color: #ffffff;
-            box-shadow: 2px 2px 10px 1px #acbebe; 
-            flex-wrap: wrap;  
-        }
+.profile-row p {
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-size: 18px;  
+}
 
-        .skill-img {
-            display: flex;
-            flex-wrap: wrap; 
-            justify-content: center; 
-            list-style: none;
-            margin-top: -50px;
-            margin-right: 25px;
-            gap: 10%;
-        }
+.skill,
+.project,
+.design{
+  font-family: "Kanit", sans-serif; 
+  text-align: center; 
+  font-size: 25px;
+  margin: 0 auto;
+  margin-top: 200px;
+  width: 85%;
+  height: auto;  
+  border-radius: 60px; 
+  background-color: #ffffff;
+  box-shadow: 2px 2px 10px 1px #acbebe; 
+  flex-wrap: wrap;  
+}
 
-        .skill-img li{
-            font-size: 20px;
-            margin: 20px 0;
-        }
+.skill-img {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  list-style: none;
+  margin-top: -50px;
+  margin-right: 25px;
+  gap: 10%;
+}
 
-        .skill-img img{
-            width: 50px;
-            height: auto; 
-            margin: 0 auto -15px auto; 
-        }
+.skill-img li{
+  font-size: 20px;
+  margin: 20px 0;
+}
 
-        .project-list,
-        .design-list{
-            list-style: none; 
-            align-items: center; 
-            justify-content: center;
-            display: flex;
-            height: 100%;
-        }
+.skill-img img{
+  width: 50px;
+  height: auto; 
+  margin: 0 auto -15px auto; 
+}
 
-        .project-list img,
-        .design-list img{
-            width: 350px;
-            margin-top: -20%;
-            height: auto;
-        }
+.project-list,
+.design-list{
+  list-style: none; 
+  align-items: center; 
+  justify-content: center;
+  display: flex;
+  height: 100%;
+}
 
-        .project-name{
-            color: black;
-            margin-top: 10%;
-            text-align: center;
-        }
+.project-list img,
+.design-list img{
+  width: 350px;
+  margin-top: -20%;
+  height: auto;
+}
 
-        .design{
-            cursor: pointer;
-        }
+.project-name{
+  color: black;
+  margin-top: 10%;
+  text-align: center;
+}
 
-        .design-list {
-            display: flex;               
-            flex-wrap: wrap;            
-            justify-content: flex-start; 
-            gap: 40px;                   
-            padding-left: 20px;          
-            list-style: none;            
-        }
-        
-        .design-list img{
-            width: 350px;
-            margin-top: -20%;
-            height: auto;
-            list-style: none;
-            margin-top: -50px;
-            margin-right: 25px;
-        }
+.design{
+  cursor: pointer;
+}
+
+.design-list {
+  display: flex;               
+  flex-wrap: wrap;            
+  justify-content: flex-start; 
+  gap: 40px;                   
+  padding-left: 20px;          
+  list-style: none;            
+}
+
+.design-list img{
+  width: 350px;
+  margin-top: -20%;
+  height: auto;
+  list-style: none;
+  margin-top: -50px;
+  margin-right: 25px;
+}
 
 
-        .design-name{
-            color: black;
-            margin-top: 10%;
-            text-align: center;
-        }
+.design-name{
+  color: black;
+  margin-top: 10%;
+  text-align: center;
+}
 
-        footer {
-        background-color: red;
-        height: 100px;
-        }
+footer {
+  background-color: red;
+  height: 100px;
+}
 
-    /* 모달 배경 */
-    .modal {
-        display: none;                 
-        position: fixed;
-        z-index: 9999;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: rgba(0,0,0,0.6);
-    }
+/* 모달 스타일*/
+.modal {
+  display: none;                 
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6);
+}
 
-    /* 모달 박스 */
-        .modal{
-        display:none;                
-        position:fixed;
-        inset:0;                    
-        z-index:9999;
-        background:rgba(0,0,0,.6);
-        padding:5vh 16px;            
-        overflow:auto;               
-    }
+/* 모달 박스 */
+.modal{
+  display:none;                
+  position:fixed;
+  inset:0;                    
+  z-index:9999;
+  background:rgba(0,0,0,.6);
+  padding:5vh 16px;            
+  overflow:auto;               
+}
 
-    /* 열릴 때 */
-    .modal.open{ display:block; }
+/* 열릴 때 */
+.modal.open{ display:block; }
 
-    /* 모달창 */
-    .modal-box {
-      background: #fff;
-      border-radius: 12px;
-      padding: 40px 30px;   
-      width: 1000px;
-      height: auto;         
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start; 
-      margin:0 auto;
-      max-height:90vh;
-      overflow:auto;
-    }
+/* 모달창 */
+.modal-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px 30px;   
+  width: 1000px;
+  height: auto;         
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  margin:0 auto;
+  max-height:90vh;
+  overflow:auto;
+}
 
-    /* 제목 */
-    #modalTitle{
-        margin:16px 24px 12px;
-        padding-bottom:8px;
-        font-size:50px;
-        font-weight:700px;
-    }
+/* 제목 */
+#modalTitle{
+  margin:16px 24px 12px;
+  padding-bottom:8px;
+  font-size:50px;
+  font-weight:700px;
+}
 
-    /* 본문  */
-    .modal-body{
-        padding:0 24px 24px;
-    }
+/* 본문  */
+.modal-body{
+  padding:0 24px 24px;
+}
 
-    /* 모달 안 이미지 통일 */
-    .modal-body img{
-      display:block;
-      width:500px;
-      height:auto;
-      margin:16px auto;
-      border-radius:8px;
-      object-fit:contain;
-      cursor: zoom-in;
-      transition: transform .2s;   
-      transform-origin: center center;  
-    }
+/* 모달 안 이미지 통일 */
+.modal-body img{
+  display:block;
+  width:500px;
+  height:auto;
+  margin:16px auto;
+  border-radius:8px;
+  object-fit:contain;
+  cursor: zoom-in;
+  transition: transform .2s;   
+  transform-origin: center center;  
+}
 
-    .modal-body img.zoomed{
-      cursor: zoom-out;
-      transform: scale(1.8);   /* 필요하면 1.5~2.0 사이로 조절 */
-      transform-origin: center center; /* 확대 기준점을 중앙으로 */
-      overflow: hidden;
-      transform:none;width:1200px;
-      max-width:90vw;
-      height:auto;
-    }
-  
-    /* 닫기(X) */
-    .modal-box .close{
-        position:absolute;
-        top:10px; right:15px;
-        font-size:24px;
-        color:#666;
-        cursor:pointer;
-    }
+/* 닫기(X) */
+.modal-box .close{
+position:absolute;
+top:10px; right:15px;
+font-size:24px;
+color:#666;
+cursor:pointer;
+}
 
-    body.modal-open{ overflow:hidden; }
+body.modal-open{ overflow:hidden; }
 }
