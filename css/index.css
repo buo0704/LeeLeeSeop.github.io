@@ -210,12 +210,12 @@
         }
 
         .design-list {
-            display: flex;               /* 가로 정렬 */
-            flex-wrap: wrap;             /* 줄바꿈 허용 */
-            justify-content: flex-start; /* 왼쪽 정렬 */
-            gap: 40px;                   /* 이미지 사이 여백 */
-            padding-left: 20px;          /* 왼쪽 여백 */
-            list-style: none;            /* li 점 제거 */
+            display: flex;               
+            flex-wrap: wrap;            
+            justify-content: flex-start; 
+            gap: 40px;                   
+            padding-left: 20px;          
+            list-style: none;            
         }
         
         .design-list img{
@@ -241,7 +241,7 @@
 
     /* 모달 배경 */
     .modal {
-        display: none;                 /* 기본은 숨김 */
+        display: none;                 
         position: fixed;
         z-index: 9999;
         top: 0;
@@ -249,7 +249,6 @@
         width: 100vw;
         height: 100vh;
         background: rgba(0,0,0,0.6);
-        /* justify-content, align-items 삭제 -> 스크롤 생길 때 자연스럽게 위아래 늘어남 */
     }
 
     /* 모달 박스 */
@@ -270,15 +269,15 @@
     .modal-box {
         background: #fff;
         border-radius: 12px;
-        padding: 40px 30px;   /* 안쪽 여백 ↑ 늘려서 위아래 공간 확보 */
+        padding: 40px 30px;   
         width: 1000px;
-        height: auto;         /* 필요 시 높이 자동으로 맞춤 */
+        height: auto;         
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-start; /* 가운데 정렬 대신 위에서부터 배치 */
+        justify-content: flex-start; 
         margin:0 auto;
     }
 
@@ -290,7 +289,7 @@
         font-weight:700px;
     }
 
-    /* 본문 – 내 스크롤 없애고, 바깥(오버레이)만 스크롤 되게 */
+    /* 본문  */
     .modal-body{
         padding:0 24px 24px;
     }
@@ -308,10 +307,11 @@
         transform-origin: center center;  
     }
 
-    .modal-body img.zoomed{
-        cursor: zoom-out;
-        transform: scale(1.8);   /* 필요하면 1.5~2.0 사이로 조절 */
-    }
+  .modal-body img.zoomed{
+      cursor: zoom-out;
+      transform: scale(1.8);   /* 필요하면 1.5~2.0 사이로 조절 */
+      transform-origin: center center; /* 확대 기준점을 중앙으로 */
+  }
   
     /* 닫기(X) */
     .modal-box .close{
