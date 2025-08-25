@@ -311,6 +311,7 @@
         cursor: zoom-out;
         transform: scale(1.8);   /* 필요하면 1.5~2.0 사이로 조절 */
         transform-origin: center center; /* 확대 기준점을 중앙으로 */
+        overflow: hidden;
     }
   
     /* 닫기(X) */
