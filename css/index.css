@@ -1,8 +1,5 @@
 @charset "UTF-8";
 
- /* 데스크탑 css */
-@media (min-width: 1025px) {
-
 html, body {
   margin: 0;
   padding: 0;
@@ -282,4 +279,3 @@ cursor:pointer;
 }
 
 body.modal-open{ overflow:hidden; }
-}
