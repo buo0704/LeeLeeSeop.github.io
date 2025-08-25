@@ -312,6 +312,7 @@
         cursor: zoom-out;
         transform: scale(1.8);   /* 필요하면 1.5~2.0 사이로 조절 */
     }
+  
     /* 닫기(X) */
     .modal-box .close{
         position:absolute;
@@ -321,11 +322,5 @@
         cursor:pointer;
     }
 
-    /* 모달 열릴 때 배경 스크롤 잠금(이미 쓰고 계시면 유지) */
     body.modal-open{ overflow:hidden; }
-
-    /* 이미지 확대 상태 */
-    #modal-img.zoomed {
-    transform: scale(2.5); /*이미지 확대*/
-    }
 }
