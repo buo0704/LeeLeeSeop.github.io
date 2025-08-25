@@ -267,18 +267,20 @@
 
     /* 모달창 */
     .modal-box {
-        background: #fff;
-        border-radius: 12px;
-        padding: 40px 30px;   
-        width: 1000px;
-        height: auto;         
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start; 
-        margin:0 auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 40px 30px;   
+      width: 1000px;
+      height: auto;         
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start; 
+      margin:0 auto;
+      max-height:90vh;
+      overflow:auto;
     }
 
     /* 제목 */
@@ -296,22 +298,25 @@
 
     /* 모달 안 이미지 통일 */
     .modal-body img{
-        display:block;
-        width:500px;
-        height:auto;
-        margin:16px auto;
-        border-radius:8px;
-        object-fit:contain;
-        cursor: zoom-in;
-        transition: transform .2s;   
-        transform-origin: center center;  
+      display:block;
+      width:500px;
+      height:auto;
+      margin:16px auto;
+      border-radius:8px;
+      object-fit:contain;
+      cursor: zoom-in;
+      transition: transform .2s;   
+      transform-origin: center center;  
     }
 
     .modal-body img.zoomed{
-        cursor: zoom-out;
-        transform: scale(1.8);   /* 필요하면 1.5~2.0 사이로 조절 */
-        transform-origin: center center; /* 확대 기준점을 중앙으로 */
-        overflow: hidden;
+      cursor: zoom-out;
+      transform: scale(1.8);   /* 필요하면 1.5~2.0 사이로 조절 */
+      transform-origin: center center; /* 확대 기준점을 중앙으로 */
+      overflow: hidden;
+      transform:none;width:1200px;
+      max-width:90vw;
+      height:auto;
     }
   
     /* 닫기(X) */
