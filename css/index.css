@@ -221,7 +221,8 @@ footer {
   z-index:9999;
   background:rgba(0,0,0,.6);
   padding:5vh 16px;            
-  overflow:auto;               
+  overflow:auto;
+  cursor: default;
 }
 
 /* 열릴 때 */
