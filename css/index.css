@@ -3,6 +3,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 h1 {
@@ -19,16 +20,7 @@ h1 {
 
 a { text-decoration: none;}
 
-.card img {
-    position: absolute; 
-    cursor: pointer;
-    top: 50%;    
-    left: 80%;   
-    transform: translate(-50%, -50%);
-    width: 40px;
-    height: 40px;  
-}
-
+/* 네비 */
 .navbar-center {
     position: fixed;
     display: flex;
@@ -56,17 +48,28 @@ a { text-decoration: none;}
     font-size: 22px;
 }
 
-.groundred{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#my-skill,
+#project,
+#design,
+#profile {
+  scroll-margin-top: 300px; /* 네비 높이만큼 */
 }
 
-.groundred img{
-    display:block;
-    width: 100%;
-    height: auto;
-    box-shadow: 2px 2px 10px 1px rgb(93, 243, 108); 
+/* 첫 배경화면  */
+.first_wallpaper-SVG {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  height: 100vh;
+  padding-top: 80px; 
+  box-sizing: border-box;
+}
+
+.first_wallpaper-SVG img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
 }
 
 /* 프로필 스타일 */
