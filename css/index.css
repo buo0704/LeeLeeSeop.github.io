@@ -49,10 +49,10 @@ a { text-decoration: none;}
 }
 
 #my-skill,
-#project,
+#project-list,
 #design,
 #profile {
-  scroll-margin-top: 300px; /* 네비 높이만큼 */
+  scroll-margin-top: 200px; 
 }
 
 /* 첫 배경화면  */
@@ -160,6 +160,11 @@ a { text-decoration: none;}
     height: 100%;
     justify-content: flex-start; 
     gap: 40px; 
+    flex-wrap: wrap;
+}
+
+.design-list li {
+  flex: 0 0 auto;
 }
 
 /* 프로젝트 디자인 이미지 공용 스타일 */
