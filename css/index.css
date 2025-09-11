@@ -280,3 +280,9 @@ body.modal-open{ overflow:hidden; }
 
 /* 이미지 확대 상태 */
 #modal-img.zoomed { transform: scale(2.5); }
+
+footer {
+    padding: 20px;
+    text-align: center;
+    width: auto;
+}
