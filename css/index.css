@@ -48,11 +48,8 @@ a { text-decoration: none;}
     font-size: 22px;
 }
 
-#my-skill,
-#project-list,
-#design,
-#profile {
-  scroll-margin-top: 200px; 
+section {
+  scroll-margin-top: 450px;
 }
 
 /* 첫 배경화면  */
