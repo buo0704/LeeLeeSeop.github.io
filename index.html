@@ -9,158 +9,138 @@
 	<link rel="stylesheet" href="css/index.css">	
 	<title>Web PortFolio</title>
 </head>
+
 <body>
 	<div class="container">
+
 		<header>
 			<nav class="navbar-center">
 				<ul>
 					<li><a href="#my-profile">프로필</a></li>
-					<li><a href="#my-skill">스킬</a></li>				
-					<li><a href="#project">프로젝트</a></li>
-					<li><a href="#design">디자인</a></li>
+					<li><a href="#my-skill">스킬</a></li>
+					<li><a href="#Portfolio">포트폴리오</a></li>
 					<li><a href="#" onclick="window.open('https://github.com/buo0704', '_blank')">Github</a></li>
 				</ul>
 			</nav>
 
-			<div class="groundred">
-				<section class="first_wallpaper-SVG">
-					 <img src="first_wallpaper.svg" alt="first_wallpaper"></img>
-				</section>
-			</div>
+			<section class="first_wallpaper-SVG">
+				<img src="first_wallpaper.svg" alt="first_wallpaper">
+			</section>
 		</header>
 
 		<main class="content">
+
+			<!-- 프로필 -->
 			<section class="my-profile" id="my-profile">
-				<div class="profile" id="profile">
+				<div class="profile">
 					<h1>프로필</h1>
 					<div class="profile-row">
 						<div>
-							<p><strong>이름</strong></p>
+							<strong>이름</strong>
 							<p>이이섭</p>
 						</div>
 						<div>
-							<p><strong>나이</strong></p>
+							<strong>나이</strong>
 							<p>1999.07.24</p>
 						</div>
 						<div>
-							<p><strong>경력</strong></p>
-							<p>
-								동아기업(2022.11 ~ 2024.02)<br>
-								그래픽디자인 업무
-							</p>
+							<strong>경력</strong>
+							<p>동아기업 (2022.11 ~ 2024.02)</p>
 						</div>
 						<div>
-							<p><strong>Tag</strong></p>
-							<p>
-								#웹 퍼블리셔<br>
-								#웹 디자이너
-							</p>
+							<strong>Tag</strong>
+							<p>#웹 퍼블리셔<br>#웹 디자이너</p>
 						</div>
 					</div>
 				</div>
 			</section>
 
+			<!-- 스킬 -->
 			<section class="my-skill" id="my-skill">
 				<div class="skill">
 					<h1>스킬</h1>
 					<ul class="skill-img">
-						<li>
-							<img src="img/html5.png" alt="html5">
-							<p>HTML5</p>
-						</li>
-						<li>
-							<img src="img/css3.png" alt="css3">
-							<p>CSS3</p>
-						</li>
-						<li>
-							<img src="img/javascript.png" alt="javascript">
-							<p>JavaScript</p>
-						</li>
-						<li>
-							<img src="img/illustrator.png" alt="illustrator">
-							<p>Adobe Illustrator</p>
-						</li>
-						<li>
-							<img src="img\photoshop.png" alt="photoshop">
-							<p>Adobe Photoshop</p>
-						</li>
+						<li><img src="img/illustrator.png" alt="Illustrator"></li>
+						<li><img src="img/photoshop.png" alt="Photoshop"></li>
+						<li><img src="img/html5.png" alt="HTML5"></li>
+						<li><img src="img/css3.png" alt="CSS3"></li>
+						<li><img src="img/javascript.png" alt="JavaScript"></li>
 					</ul>
 				</div>
 			</section>
 
-			<section class="project" id="project">
-				<h1>프로젝트</h1>
-				<ul class="project-list">
-					<li>
-						<a href="https://buo0704.github.io/UijeongbuSi-guide.io/" target="_blank">
-							<img src="img/uijeongbusi img.png" alt="의정부안내서표지">
-							<div class="project-name">
-								<h3 class="project-title">의정부 안내서</h3>
-								<p class="project-desc">의정부시 여행 안내서</p>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="https://buo0704.github.io/English.io/" target="_blank">
-							<img src="img/영어공부 홈.png" alt="영어공부 프로젝트">
-							<div class="project-name">
-								<h3 class="project-title">영어공부</h3>
-								<p class="project-desc">단어,문법 공부</p>
-							</div>
-						</a>
-					</li>					
-				</ul>
-			</section>
-			
-			<section class="design" id="design">
-				<h1>디자인</h1>
-				<ul class="design-list">
-					<li>
+			<!-- 포트폴리오 -->
+			<section class="Portfolio" id="Portfolio">
+				<h1>포트폴리오</h1>
+
+				<ul class="Portfolio-list">
+
+					<li class="portfolio-item">
 						<a href="이이섭 시각디자인 포트폴리오.pdf" target="_blank">
-							<img src="img/portfolio_home_screen.jpg" alt="디자인 포트폴리오 첫 표지">
-							<div class="design-name">
-								<h3 class="design-title">디자인 포트폴리오</h3>
-								<p class="design-desc">종합 디자인</p>
+							<div class="portfolio-thumb">
+								<img src="img/portfolio_home_screen.jpg" alt="디자인 포트폴리오">
+								<div class="portfolio-overlay">
+									<p class="category">Visual Design</p>
+									<h3 class="title">시각디자인 포트폴리오</h3>
+								</div>
 							</div>
 						</a>
 					</li>
-					<li>
-						<img src="img/DoDamLogo.png" alt="도담" 
-							data-title="도담"
-							data-images=
-							"img/Dodam logo-1.png,
-							img/Dodam logo-2.png,
-							img/front design.png, 
-							img/Nutritional information diagram on the left.png,
-							img/Product information design.png">
-						<div class="design-name">
-							<h3 class="design-title">도담</h3>
-						</div>
+
+					<li class="portfolio-item">
+						<a href="https://buo0704.github.io/UijeongbuSi-guide.io/" target="_blank">
+							<div class="portfolio-thumb">
+								<img src="img/uijeongbusi img.png" alt="의정부 안내서">
+								<div class="portfolio-overlay">
+									<p class="category">Web / Guide</p>
+									<h3 class="title">의정부 안내서</h3>
+								</div>
+							</div>
+						</a>
 					</li>
-					<li>
-						<img src="img/한국사아카이브 첫 표지.png" alt="한국사아카이브" data-title="한국사아카이브"
-							data-images=
-							"img/한국사 아카라이브 메인 홈.png">
-						<div class="design-name">
-							<h3 class="design-title">한국사아카이브(제작중)</h3>
-						</div>
-					</li>					
+
+					<li class="portfolio-item">
+						<a href="https://unruly-industry-e87.notion.site/2daae08e889c807c9ba9c129f68877ff" target="_blank" rel="noopener noreferrer">
+							<div class="portfolio-thumb">
+								<img src="img/DoDamLogo.png" alt="도담">
+								<div class="portfolio-overlay">
+									<p class="category">Branding / Package</p>
+									<h3 class="title">도담</h3>
+								</div>
+							</div>
+						</a>
+					</li>
+
+					<li class="portfolio-item">
+						<a href="https://buo0704.github.io/English.io/" target="_blank">
+							<div class="portfolio-thumb">
+								<img src="img/메인 화면.png" alt="영어 공부 프로젝트">
+								<div class="portfolio-overlay">
+									<p class="category">Web Project</p>
+									<h3 class="title">영어 학습 사이트</h3>
+								</div>
+							</div>
+						</a>
+					</li>
+
+					<li class="portfolio-item">
+						<a href="https://unruly-industry-e87.notion.site/2daae08e889c806fa529e05be8ec1ed2" target="_blank" rel="noopener noreferrer">
+							<div class="portfolio-thumb">
+								<img src="img/한국사아카이브 첫 표지.png" alt="한국사 아카이브">
+								<div class="portfolio-overlay">
+									<p class="category">Archive / Web</p>
+									<h3 class="title">한국사 아카이브(제작중)</h3>
+								</div>
+							</div>
+						</a>
+					</li>
+
 				</ul>
-				<!-- 모달 -->
-				<div id="designModal" class="modal">
-					<div class="modal-box">
-						<span class="close">&times;</span>
-						<h3 id="modalTitle"></h3>
-						<div class="modal-body" id="modalBody"></div>
-					</div>
-				</div>
 			</section>
 		</main>
-		<footer>
-			
-		</footer>
+
+		<footer></footer>
+
 	</div>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="js/index.js"></script>
 </body>
 </html>
