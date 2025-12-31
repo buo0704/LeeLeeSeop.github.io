@@ -4,282 +4,292 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-}
-
-h1 {
+    scroll-behavior: smooth;
     font-family: "Noto Sans KR", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-align: left; 
-    position: relative;
-    font-size: 50px;                           
-    top: -80px;  
-    left: 30px;
-    margin: 0;
+    background-color: #f8f9fa; 
 }
 
-a { text-decoration: none;}
+a { text-decoration: none; color: inherit; }
 
-/* 네비 */
-.navbar-center {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-    padding: 12px 0;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
+ul { margin: 0; padding: 0; list-style: none; }
 
-.navbar-center ul{
-    list-style: none;
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    padding: 0;
-}
-
-.navbar-center li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 22px;
-}
-
-section {
-  scroll-margin-top: 450px;
-}
-
-/* 첫 배경화면  */
+/* 배경화면 스타일 */
 .first_wallpaper-SVG {
-  display: flex;
-  align-items: center; 
-  justify-content: center; 
-  height: 100vh;
-  padding-top: 80px; 
-  box-sizing: border-box;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    width: 100%;      
+    height: 1080px;    
+    overflow: hidden;  
+    padding-top: 0;    
 }
 
 .first_wallpaper-SVG img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; 
-  display: block;
-}
-
-/* 프로필 스타일 */
-.profile {
-    text-align: center;     
-    position: relative;    
-    width: 85%;
-    height: auto;
-    background-color: rgb(255, 255, 255);
-    margin: 0 auto;      
-    margin-top: 200px; 
-    box-shadow: 2px 2px 10px 1px rgb(172, 190, 190);
-    border-radius: 60px;  
-    min-height: 210px;   
-}
-
-.profile-row {
-    display: flex;
-    justify-content: center; 
-    gap: 80px;                
-    margin-top: -30px;
-    flex-wrap: wrap;  
-}
-
-.profile-row > div {
-    min-width: 150px;         
-    text-align: left;         
-    font-family: "Kanit", sans-serif;
-}
-
-.profile-row strong{ font-size: 30px; }
-
-.profile-row p {
-    margin-bottom: 10px;
-    margin-top: 5px;
-    font-size: 18px;  
-}
-/* 프로필 스타일의 끝 */
-
-/* 스킬 프로젝트 디자인 공용 스타일 */
-.skill,
-.project,
-.design{
-    font-family: "Kanit", sans-serif; 
-    text-align: center; 
-    font-size: 25px;
-    margin: 0 auto;
-    margin-top: 200px;
-    width: 85%;
-    height: auto;  
-    border-radius: 60px; 
-    background-color: rgb(255, 255, 255);
-    box-shadow: 2px 2px 10px 1px rgb(172, 190, 190); 
-    flex-wrap: wrap;  
-}
-
-/* 스킬 이미지 */
-.skill-img {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    list-style: none;
-    margin-top: -50px;
-    margin-right: 25px;
-    gap: 10%;
-}
-
-/* 스킬 목록 */
-.skill-img li{
-    font-size: 20px;
-    margin: 20px 0;
-}
-
-/* 스킬 이미지 */
-.skill-img img{
-    width: 50px;
-    height: auto; 
-    margin: 0 auto -15px auto; 
-}
-
-/* 프로젝트 디자인 공용 리스트 */
-.project-list,
-.design-list{
-    list-style: none; 
-    align-items: flex-start;
-    justify-content: center;
-    display: flex;
+    width: 100%;
     height: 100%;
-    justify-content: flex-start; 
-    gap: 40px; 
-    flex-wrap: wrap;
-}
-
-.design-list li {
-  flex: 0 0 auto;
-}
-
-/* 프로젝트 디자인 이미지 공용 스타일 */
-.project-list img,
-.design-list img{
-    width: 350px;
-    height: 200px;
-    outline-color: rgb(0, 0, 0);
-    list-style: none;
+    object-fit: cover; 
     display: block;
 }
 
-/* 프로젝트 디자인 이름 */
-.project-name,
-.design-name{
-    color: rgb(0, 0, 0);
-    margin-top: -5%;
-    text-align: center;
-}
-
-/* 프로젝트, 디자인 제목 */
-.project-title,
-.design-title{ margin-bottom: 10px; }
-
-/* 프로젝트, 디자인 문단 */
-.project-desc,
-.design-desc { margin-top: 0; }
-
-/* 디자인 포인트 커서 */
-.design{ cursor: pointer; }
-
-/* 모달 배경 */
-.modal {
-    display: none;              
+/* 상단 네비 */
+.navbar-center {
     position: fixed;
-    z-index: 9999;
     top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0,0,0,0.6);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+    padding: 15px 0;
 }
 
-/* 모달 박스 */
-.modal {
-    display:none;                
-    position:fixed;
-    inset:0;                    
-    z-index:9999;
-    background:rgba(0,0,0,.6);
-    padding:5vh 16px;            
-    overflow:auto;               
+.navbar-center ul {
+    display: flex;
+    gap: 40px;
 }
 
-/* 열릴 때 */
-.modal.open{ display:block; }
+.navbar-center li a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s;
+}
 
-/* 모달창 */
-.modal-box {
-    background: rgb(255, 255, 255);
-    border-radius: 12px;
-    padding: 40px 30px;   
-    width: 1000px;
-    height: auto;         
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+/* 프로필 */
+.profile {
+    width: 1920px;
+    margin: 0 auto;
     position: relative;
+}
+
+/* 프로필 제목 */
+.profile h1 {
+    width: 111px;
+    height: 58px;
+    
+    margin-top: 96px;
+    margin-left: 500px;
+    
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 58px;
+    text-align: left;
+    color: #000000;
+    letter-spacing: 0px;
+    opacity: 1;
+
+    display: block;
+    position: static;
+}
+
+
+.profile-row {
+    width: 830px;         
+    height: 80px;        
+    margin-left: 545px;   
+    margin-top: 15px;
+    
+    
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;       
+}
+
+
+.profile-row div {
+    display: flex;
+    flex-direction: column; 
+    gap: 8px;               
+}
+
+.profile-row strong {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;      
+    font-weight: bold;
+    color: #000000;
+    line-height: 1;        
+}
+
+.profile-row p {
+    margin: 0;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.5;
+}
+
+/* 스킬 */
+.skill {
+    width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.skill h1 {
+    width: 111px;
+    height: 58px;
+    
+    margin-top: 193px;
+    margin-left: 500px;
+    
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 58px;
+    text-align: left;
+    color: #000000;
+    letter-spacing: 0px;
+    opacity: 1;
+
+    display: block;
+    position: static;
+}
+
+.skill-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    width: 1920px;
+    padding-left: 730px;     
+    padding-right: 730px;   
+    box-sizing: border-box;
+    
+    margin-top: 30px;
+    list-style: none;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.skill-img li {
+   
+    margin-right: 40px;
+}
+
+.skill-img li:last-child {
+    margin-right: 0;
+}
+
+
+.skill-img img {
+    width: 60px;             
+    height: 60px;            
+    display: block;
+    object-fit: contain;
+}
+
+/* 포트폴리오 */
+.Portfolio {
+    width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.Portfolio h1 {
+    width: 200px;
+    height: 58px;
+    
+    
+    margin-top: 210px;
+    margin-left: 500px;
+    
+   
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 58px;
+    text-align: left;
+    color: #000000;
+    letter-spacing: 0px;
+    opacity: 1;
+
+   
+    display: block;
+    position: static;
+}
+
+.Portfolio-list {
+    display: flex;
+    flex-wrap: wrap;      
+    list-style: none;
+    padding: 0;
+    margin-left: 500px;   
+    margin-top: 40px;
+    width: 980px;         
+    
+    
+    column-gap: 40px;     
+    row-gap: 60px;        
+}
+
+.Portfolio-list li {
+    width: 300px;         
+}
+
+.Portfolio-list li img {
+    width: 300px;         
+    height: 213px;        
+    /* object-fit: cover; */
+    display: block;
+}
+
+
+.portfolio-thumb {
+    position: relative;
+    width: 300px;
+    height: 213px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio-thumb img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; 
-    margin:0 auto;
+    justify-content: flex-start;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-/* 제목 */
-#modalTitle{
-    margin:16px 24px 12px;
-    padding-bottom:8px;
-    font-size:50px;
-    font-weight:700px;
+.portfolio-overlay .category {
+    font-size: 14px;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 8px;
+    line-height: 1.4;
 }
 
-.modal-body{ padding:0 24px 24px; }
-
-/* 모달 안 이미지 통일 */
-.modal-body img{
-    display:block;
-    width:500px;
-    height:auto;
-    margin:16px auto;
-    border-radius:8px;
-    object-fit:contain;
-    cursor: zoom-in;
-    transition: transform .2s;   
-    transform-origin: center center;  
+.portfolio-overlay .title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
 }
 
-.modal-body img.zoomed{
-    cursor: zoom-out;
-    transform: scale(1.8);   
+.portfolio-thumb:hover .portfolio-overlay {
+    opacity: 1;
 }
 
-/* 닫기(X) */
-.modal-box .close{
-    position:absolute;
-    top:10px; right:15px;
-    font-size:24px;
-    color:rgb(102, 102, 102);
-    cursor:pointer;
+.portfolio-thumb:hover img {
+    transform: scale(1.05);
 }
-
-/* 모달 열릴 때 배경 스크롤 잠금 */
-body.modal-open{ overflow:hidden; }
-
-/* 이미지 확대 상태 */
-#modal-img.zoomed { transform: scale(2.5); }
 
 footer {
-    padding: 20px;
+    padding: 100px;
     text-align: center;
     width: auto;
 }
