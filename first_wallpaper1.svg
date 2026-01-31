@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 600">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00f500;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        letter-spacing: 0em;
+      }
+
+      .cls-10 {
+        font-family: Bahnschrift, Bahnschrift;
+        font-size: 80px;
+        font-variation-settings: 'wght' 400, 'wdth' 100;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" width="1920" height="600"/>
+  <text class="cls-10" transform="translate(582.8 323.4)"><tspan class="cls-5" x="0" y="0">V</tspan><tspan class="cls-2" x="48.1" y="0">I</tspan><tspan class="cls-9" x="71" y="0">S</tspan><tspan class="cls-3" x="119.5" y="0">U</tspan><tspan class="cls-4" x="170.3" y="0">AL RE</tspan><tspan class="cls-11" x="393.4" y="0">P</tspan><tspan class="cls-8" x="443.3" y="0">O</tspan><tspan class="cls-11" x="494.2" y="0">S</tspan><tspan class="cls-7" x="543.4" y="0">I</tspan><tspan class="cls-4" x="569.4" y="0">T</tspan><tspan class="cls-11" x="608.7" y="0">O</tspan><tspan class="cls-6" x="660.4" y="0">R</tspan><tspan class="cls-4" x="712.9" y="0">Y</tspan></text>
+</svg>
