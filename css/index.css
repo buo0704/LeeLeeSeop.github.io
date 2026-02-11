@@ -6,7 +6,7 @@ html, body {
     scroll-behavior: smooth;
     font-family: "Noto Sans KR", sans-serif;
     background-color: #f8f9fa; 
-    overflow-x: hidden; /* 가로 스크롤 방지 */
+    overflow-x: hidden; 
 }
 
 a { text-decoration: none; color: inherit; }
@@ -69,25 +69,22 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* 프로필 제목 */
 .profile h1 {
-    width: 830px;
+    width: 980px;
     max-width: 90%;
-    
     margin: 96px auto 0;
-    
     font-family: "Noto Sans KR", sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
     line-height: 58px;
     text-align: left;
     color: #000000;
     letter-spacing: 0px;
     opacity: 1;
-
     display: block;
 }
 
 .profile-row {
-    width: 830px;
+    width: 980px;
     max-width: 90%;
     margin: 15px auto 0;
     
@@ -128,20 +125,17 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 
 .skill h1 {
-    width: 830px;
+    width: 980px;
     max-width: 90%;
-    
     margin: 193px auto 0;
-    
     font-family: "Noto Sans KR", sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
     line-height: 58px;
     text-align: left;
     color: #000000;
     letter-spacing: 0px;
     opacity: 1;
-
     display: block;
 }
 
@@ -149,13 +143,11 @@ ul { margin: 0; padding: 0; list-style: none; }
     display: flex;
     justify-content: center;
     align-items: center;
- 
-    max-width: 100%; /* 1920px 제거 */
-    width: 100%;     /* 100%로 변경 */
+    max-width: 100%; 
+    width: 100%;     
     padding-left: 20px;
     padding-right: 20px; 
     box-sizing: border-box;
-    
     margin: 30px auto 0;
     list-style: none;
 }
@@ -187,18 +179,15 @@ ul { margin: 0; padding: 0; list-style: none; }
 .Portfolio h1 {
     width: 980px;
     max-width: 90%;
-    
     margin: 210px auto 0;
-    
     font-family: "Noto Sans KR", sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
     line-height: 58px;
     text-align: left;
     color: #000000;
     letter-spacing: 0px;
     opacity: 1;
-
     display: block;
 }
 
@@ -207,11 +196,9 @@ ul { margin: 0; padding: 0; list-style: none; }
     flex-wrap: wrap;      
     list-style: none;
     padding: 0;
-    
     width: 980px;
     max-width: 90%;
     margin: 40px auto 0;
-    
     column-gap: 40px;     
     row-gap: 60px;
 }
@@ -246,11 +233,9 @@ ul { margin: 0; padding: 0; list-style: none; }
     inset: 0;
     background: rgba(0, 0, 0, 0.6);
     padding: 20px;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
     opacity: 0;
     transition: opacity 0.3s ease;
 }
