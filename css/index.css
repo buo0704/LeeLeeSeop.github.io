@@ -253,6 +253,13 @@ ul { margin: 0; padding: 0; list-style: none; }
     color: #ffffff;
 }
 
+
+.portfolio-overlay .project {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
 .portfolio-thumb:hover .portfolio-overlay {
     opacity: 1;
 }
