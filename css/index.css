@@ -263,13 +263,13 @@
         .skill-badge i { font-size: 24px; width: 24px; text-align: center; }
 
         /* 8. 포트폴리오 섹션 */
-        .portfolio-grid {
+        .project-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 32px;
         }
 
-        .portfolio-item {
+        .project-item {
             display: block;
             background: var(--white);
             border: 1px solid var(--border-color);
@@ -278,12 +278,12 @@
             transition: all 0.3s;
         }
 
-        .portfolio-item:hover {
+        .project-item:hover {
             box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
             transform: translateY(-4px);
         }
 
-        .portfolio-thumb {
+        .project-thumb {
             position: relative;
             width: 100%;
             aspect-ratio: 16 / 9;
@@ -291,14 +291,14 @@
             background-color: var(--border-color);
         }
 
-        .portfolio-thumb img {
+        .project-thumb img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
 
-        .portfolio-overlay {
+        .project-overlay {
             position: absolute;
             inset: 0;
             background-color: rgba(17, 24, 39, 0.8);
@@ -311,11 +311,11 @@
             color: var(--white);
         }
 
-        .portfolio-item:hover .portfolio-overlay {
+        .project-item:hover .project-overlay {
             opacity: 1;
         }
 
-        .portfolio-item:hover .portfolio-thumb img {
+        .project-item:hover .project-thumb img {
             transform: scale(1.05);
         }
 
@@ -331,25 +331,25 @@
             transition: transform 0.3s;
         }
         
-        .portfolio-item:hover .badge {
+        .project-item:hover .badge {
             transform: translateY(0);
         }
 
-        .portfolio-info {
+        .project-info {
             padding: 24px;
         }
 
-        .portfolio-title {
+        .project-title {
             font-size: 20px;
             margin-bottom: 8px;
             transition: color 0.3s;
         }
 
-        .portfolio-item:hover .portfolio-title {
+        .project-item:hover .project-title {
             color: var(--brand-accent);
         }
 
-        .portfolio-desc {
+        .project-desc {
             color: var(--text-gray);
             font-size: 14px;
         }
